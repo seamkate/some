@@ -4,23 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
   <header>
-<img src="\img\Logo.png" alt="logo">
-    <ul class="menu">
-      <li class="menu__item"><a href="#" title="О нас">О нас</a></li>
-      <li class="menu__item"><a href="#" title="Услуги">Услуги</a></li>
-      <li class="menu__item"><a href="#" title="Вакансии">Вакансии</a></li>
-      <li class="menu__item"><a href="#" title="Новости">Новости</a></li>
-      <li class="menu__item"><a href="#" title="Соглашения">Соглашения</a></li>
-    </ul>
-    <button class="button button__white">Войти</button>
-    <button class="button">Зарегистрироваться</button>
+    <img src="\img\Logo.png" alt="logo">
+    <div class="header__desc">
+      <ul class="menu">
+        <li class="menu__item"><a class="menu__link" href="#" title="О нас">О нас</a></li>
+        <li class="menu__item"><a class="menu__link" href="#" title="Услуги">Услуги</a></li>
+        <li class="menu__item"><a class="menu__link" href="#" title="Вакансии">Вакансии</a></li>
+        <li class="menu__item"><a class="menu__link" href="#" title="Новости">Новости</a></li>
+        <li class="menu__item"><a class="menu__link" href="#" title="Соглашения">Соглашения</a></li>
+      </ul>
+      <button class="button button__white">Войти</button>
+      <button class="button">Зарегистрироваться</button>
+    </div>
   </header>
-  <section>
-    <h1>None</h1>
+  <section class="landing-page">
+    <form class="landing-page__form" >
+       <h1>Найдём номера под ваши пожелания</h1>
+       <div class="landing-page__form-item">
+         <div class="landing-page__form-date">
+            <div> 
+              <label for="прибытие">прибытие</label>
+              <input type="text" name="прибытие" placeholder="ДД.ММ.ГГГГ">
+            </div>
+            <div class="landing-page__form-item">
+              <label for="выезд">выезд</label>
+              <input type="text" name="выезд" placeholder="ДД.ММ.ГГГГ">
+            </div>
+          </div>
+       <div class="landing-page__form-item">
+         <label for="гости">гости</label>
+          <input type="text" name="гости" placeholder="Сколько гостей">
+       </div>
+       <button type="submit">подобрать номер</button>
+    </form>
+    <p>Лучшие номера для вашей работы, отдыха и просто вдохновения</p>
+   
   </section>
   <footer></footer>
 </body>
