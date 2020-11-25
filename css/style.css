@@ -67,26 +67,32 @@ button  {
 
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   border-radius: 22px;
-  border-color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-  padding: 10px;
+  padding: 10px 20px;
+  border: transparent;
+}
+.button__white{
+  padding: 2px;
+  margin-right: 20px;
 }
 
-.button__white {
-  color: #BC9CFF;;
+.button span {
+  color: #BC9CFF;
   background: #FFFFFF;
-  border-color: linear-gradient(180deg, #BC9CFF, #8BA4F9);
+  padding: 8px 16px;
+  border-radius: 22px;
 }
+
 a {
   text-decoration: none;
 }
 
 /*--HEADER--*/
 header {
-  width: 1440px;
+  max-width: 1440px;
   display: flex;
-  padding: 15px 140px 15px 140px;
   justify-content: space-around;
   align-items: center;
+  padding: 15px 0;
 }
 .menu {
   display: flex;
@@ -98,7 +104,8 @@ header {
 }
 
 .menu__item {
-  padding-right: 20px;
+  margin-right: 20px;
+
 }
 
 .menu__link {
@@ -116,28 +123,198 @@ header {
 
 
 /* BODY*/
-
-section{
-  max-width: 1440px;
-  max-height: 1020px;
-  background: url(img\image3.png) no-repeat fixed center;
+.wrapper {
+  width: 100%;
+  background: url(/img/image3.png) no-repeat scroll center;
+  padding-top: 70px;
 }
 
-form {
-  max-width: 380px;
-  background-color: #FFFFFF
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
 }
 
-.landing-page__form {
- position: absolute;
+
+.choose-room {
   width: 380px;
   height: 374px;
-  left: 140px;
-  top: 140px;
+
+  padding: 40px 30px 30px 30px;
+  margin-bottom: 320px;
+  
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
-.landing-page__form-item {
+.choose-room h1 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+
+  /* Dark 100% */
+
+  color: #1F2041;
+}
+
+.choose-room__item {
   display: block;
+  padding-bottom: 20px;
 }
-.landing-page__form-date{
+
+.choose-room__item-date {
   display: flex;
 }
+
+#text-on-photo{
+  display: block;
+  margin-left: auto;
+  max-width: 280px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+
+  text-align: right;
+
+  /* Dark 75% */
+
+  color: rgba(31, 32, 65, 0.75);
+
+  padding-bottom: 18px;
+}
+
+.footer__menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 104px 0 100px 0;
+}
+.footer-item{
+  display: block;
+  max-width: 260px;
+}
+.footer-item li {
+  padding-bottom: 20px;
+}
+.footer-item h3 {
+  padding-bottom: 20px;
+}
+
+.footer-item img {
+  padding-bottom: 20px;
+  margin-top: -10px;
+}
+
+
+input [type="email"]{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+
+
+  /* Dark 25% */
+
+  color: rgba(31, 32, 65, 0.25);
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  background: url(/img/arrow_forward_color.svg);
+}
+
+.social-media {
+  align-items: flex-end;
+}
+
+.social-media__icon {
+  padding-right: 20px;
+}
+.social-media__icon:last-child {
+  padding-right: 0;
+}
+
+.footer-item-copyright {
+  max-width: 1160px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 23px 0;
+}
+#copyright {
+border-top: #E5E5E5 1px solid;
+}
+
+/*INDEX ROOM DETAILS*/
+.gallery {
+  padding-top: 0;
+  display: grid;
+  background-image: none;
+  grid-template-areas: "img-1 img-1 img-2"
+                       "img-1 img-1 img-3";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.img-1 {
+  grid-area: img-1;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.img-2 {
+  grid-area: img-2;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.img-3 {
+  grid-area: img-3;
+  object-fit: cover;
+  width: 100%;
+}
+
+.room-detail-grid {
+  padding-top: 70px;
+  display: grid;
+  grid-template-areas: "about-room impression-room number-card"
+                       "feedback feedback number-card"
+                       "rools cansel number-card";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-row-gap: 70px;
+  grid-column-gap: 30px;
+}
+.about-room {
+  grid-area: about-room;
+}
+
+.impression-room{
+  grid-area: impression-room;
+}
+
+.number-card{
+  grid-area: number-card;
+}
+
+.feedback {
+  grid-area: feedback;
+}
+
+.rools {
+  grid-area: rools;
+}
+
+.cansel {
+  grid-area: cansel;
+}
+

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Room details</title>
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -22,38 +22,56 @@
       <button class="button">Зарегистрироваться</button>
     </div> 
   </header>
-  <div class="wrapper">
-    <div class="container">
-      <div class="choose-room">
-        <form name="choose-room-form">
-          <h1>Найдём номера под ваши пожелания</h1>
-          <div class="choose-room__item">
-            <div class="choose-room__item-date">
-              <div class="choose-room__item-input">
-                <label for="прибытие">прибытие</label>
-                <input type="date" name="прибытие" id="прибытие" placeholder="ДД.ММ.ГГГГ">
-              </div>
-              <div class="choose-room__item-input">
-                <label for="выезд">выезд</label>
-                <input type="date" name="выезд" id="выезд" placeholder="ДД.ММ.ГГГГ">
-              </div>
+  <div class="wrapper gallery">
+    <img class="img-1" src="/img/image 5.png" alt="room">
+    <img class="img-2" src="/img/image 6.png" alt="room2">
+    <img class="img-3" src="/img/image 7.png" alt="room3">
+  </div>
+  <div class="container room-detail-grid">
+    <div class="about-room">
+      <h2>Сведения о номере</h2>
+    </div>
+    <div class="impression-room">
+      <h2>Впечатления от номера</h2>
+    </div>
+    <div class="feedback">
+      <h2>Отзывы посетителей</h2>
+    </div>
+    <div class="number-card">
+      <form name="choose-room-form">
+        <h1>Найдём номера под ваши пожелания</h1>
+        <div class="choose-room__item">
+          <div class="choose-room__item-date">
+            <div class="choose-room__item-input">
+              <label for="прибытие">прибытие</label>
+              <input type="date" name="прибытие" id="прибытие" placeholder="ДД.ММ.ГГГГ">
             </div>
             <div class="choose-room__item-input">
-              <label for="гости">гости</label>
-              <select name="гости" id="гости">
-                <option value="Взрослые">Взрослые</option> 
-                <option value="Дети">Дети</option> 
-                <option value="Младенцы">Младенцы</option> 
-              </select> 
+              <label for="выезд">выезд</label>
+              <input type="date" name="выезд" id="выезд" placeholder="ДД.ММ.ГГГГ">
             </div>
           </div>
-          <button type="submit">подобрать номер <img src="/img/arrow_forward.svg" alt="arrow_forward"></button>
-        </form> 
-      </div>
-      <p id="text-on-photo">Лучшие номера для вашей работы, отдыха и просто вдохновения</p>
+          <div class="choose-room__item-input">
+            <label for="гости">гости</label>
+            <select name="гости" id="гости">
+              <option value="Взрослые">Взрослые</option> 
+              <option value="Дети">Дети</option> 
+              <option value="Младенцы">Младенцы</option> 
+            </select> 
+          </div>
+        </div>
+        <button type="submit">подобрать номер <img src="/img/arrow_forward.svg" alt="arrow_forward"></button>
+      </form> 
     </div>
-  
+    <div class="rools">
+      <h2>Правила </h2>
+    </div>
+    <div class="cansel">
+      <h2>Отмена</h2>
+    </div>
+
   </div>
+
   <footer>
     <div class="container footer__menu">
       <div class="footer-item">
